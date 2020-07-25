@@ -1,0 +1,153 @@
+/* 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*/
+
+body, ul, a, h4, h6 {
+    margin: 0;
+    font: inherit;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Batas Reset */
+
+/* span,
+h1, h2, h3, h4, h5, h6, p,
+a, em, img, q, samp, strong, b, u, i, center, ol, ul, li,
+form, label, tr, th, td,
+article, footer, header,
+menu, nav {
+    border: 1px solid blue;
+} */
+
+/* Batas Debugging */
+body {
+    font-size: 10pt;
+}
+
+header {
+    padding: 20px;
+    position: fixed;
+    background: black top center;
+    left: 0;
+    right: 0;
+    color: white;
+    font-family: "Roboto", "Helvetica Neue", sans-serif;
+    text-transform: uppercase;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+.as-cta-first {
+    display: inline-block;
+    color: red;
+    height: 25px;
+    line-height: 25px;
+}
+
+.as-mark-type {
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    font-family: "Knockout 70 A", "Roboto", "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+}
+
+nav {
+    display: inline-block;
+    width: 100%;
+    max-width: 465px;
+}
+/* amannnnnnn */
+nav ul li.menu-item {
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+}
+
+main {
+    padding: 80px 0 0;
+}
+
+.contact {
+    padding: 10px 0 5px;
+    position: relative;
+    background: black bottom center;
+    left: 0;
+    right: 0;
+    color: white;
+    font-family: "Roboto", "Helvetica Neue", sans-serif;
+    text-align: center;
+}
+
+div.contact ul li.contact-item {
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    margin: 5px 5px 0;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    height: 12px;
+    line-height: 12px;
+    text-align: center;
+    font-size: 12px;
+}
