@@ -51,7 +51,6 @@ table {
 
 body, ul, a, h4, h6 {
     margin: 0;
-    font: inherit;
     padding: 0;
 }
 
@@ -75,13 +74,18 @@ menu, nav {
     border: 1px solid blue;
 } */
 
+/* header, .as-cta-first, .as-mark-type, nav, nav ul, nav ul li.menu-item {
+    border: 1px solid blue;
+} */
+
 /* Batas Debugging */
-body {
-    font-size: 10pt;
-}
 
 header {
-    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center ;
+    padding: 15px 20px;
     position: fixed;
     background: black top center;
     left: 0;
@@ -89,44 +93,56 @@ header {
     color: white;
     font-family: "Roboto", "Helvetica Neue", sans-serif;
     text-transform: uppercase;
-    text-align: justify;
-    text-align-last: justify;
 }
 
 .as-cta-first {
-    display: inline-block;
-    color: red;
-    height: 25px;
-    line-height: 25px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid red;
 }
 
 .as-mark-type {
-    display: inline-block;
-    height: 25px;
-    line-height: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
     font-family: "Knockout 70 A", "Roboto", "Helvetica Neue", Arial, sans-serif;
     font-weight: bold;
+    padding: 2px 0;
 }
 
 nav {
-    display: inline-block;
+    font-size: 11pt;
     width: 100%;
-    max-width: 465px;
-}
-/* amannnnnnn */
-nav ul li.menu-item {
-    display: inline-block;
-    height: 25px;
-    line-height: 25px;
+    text-transform: capitalize;
 }
 
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding: 2px 0;
+}
+
+nav ul li.menu-item {
+    padding: 1px 0;
+}
+
+ .desktop {
+    display: none;
+} 
+
+/* belom selesai flexbox */
+
 main {
-    padding: 80px 0 0;
+    padding: 78px 0 0;
 }
 
 .contact {
     padding: 10px 0 5px;
-    position: relative;
     background: black bottom center;
     left: 0;
     right: 0;
@@ -150,4 +166,19 @@ footer {
     line-height: 12px;
     text-align: center;
     font-size: 12px;
+}
+
+@media (min-width: 720px) {
+    nav {
+        width: 55%;
+        max-width: 550px
+    } 
+     .desktop{
+        display: inline-block
+    }
+    .as-mark-type {
+        display: inline-block;
+        width: unset
+    } ; 
+
 }
