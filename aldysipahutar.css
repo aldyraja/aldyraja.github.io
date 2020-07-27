@@ -33,16 +33,6 @@ ol, ul {
 	list-style: none;
 }
 
-blockquote, q {
-	quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -85,7 +75,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center ;
-    padding: 15px 20px;
+    padding: 10px;
     position: fixed;
     background: black top center;
     left: 0;
@@ -96,24 +86,24 @@ header {
 }
 
 .as-cta-first {
-    width: 35px;
-    height: 35px;
+    width: 28px;
+    height: 28px;
     text-align: center;
-    line-height: 35px;
-    border: 1px solid red;
+    line-height: 28px;
+    border: 1px solid blue;
 }
 
 .as-mark-type {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    font-family: "Knockout 70 A", "Roboto", "Helvetica Neue", Arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-weight: bold;
     padding: 2px 0;
 }
 
 nav {
-    font-size: 11pt;
+    font-size: 9pt;
     width: 100%;
     text-transform: capitalize;
 }
@@ -123,55 +113,54 @@ nav ul {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    align-content: space-between;
-    padding: 2px 0;
+    padding-top: 4px;
 }
 
-nav ul li.menu-item {
-    padding: 1px 0;
-}
+/* nav ul li.menu-item {
+
+} */
 
  .desktop {
     display: none;
 } 
 
-/* belom selesai flexbox */
-
 main {
-    padding: 78px 0 0;
+    padding-top: 60px;
 }
 
 .contact {
-    padding: 10px 0 5px;
+    padding: 10px 5px 0;
     background: black bottom center;
     left: 0;
     right: 0;
     color: white;
-    font-family: "Roboto", "Helvetica Neue", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
-div.contact ul li.contact-item {
-    display: inline-block;
-    height: 35px;
-    line-height: 35px;
-    margin: 5px 5px 0;
+.contact ul {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.contact ul li.contact-item {
+    height: 30px;
 }
 
 footer {
     background-color: black;
     color: white;
-    padding: 10px;
-    height: 12px;
-    line-height: 12px;
+    padding: 7px 0 8px;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 565px) {
+
     nav {
-        width: 55%;
-        max-width: 550px
+        width: 62%;
+        max-width: 500px
     } 
      .desktop{
         display: inline-block
@@ -179,6 +168,23 @@ footer {
     .as-mark-type {
         display: inline-block;
         width: unset
-    } ; 
+    }
+
+    main {
+        padding-top: 48px;
+    }
+
+    .contact {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .contact ul {
+        justify-content: space-evenly;
+    }
+
+    .contact ul li.contact-item {
+        height: 35px;
+    } ;
 
 }
